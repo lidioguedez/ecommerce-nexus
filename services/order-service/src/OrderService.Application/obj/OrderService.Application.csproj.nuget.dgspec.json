@@ -1,0 +1,142 @@
+{
+  "format": 1,
+  "restore": {
+    "/mnt/g/Repositorios/DEMO-PROYECTOS/ecommerce_nexus/ecommerce-nexus/services/order-service/src/OrderService.Application/OrderService.Application.csproj": {}
+  },
+  "projects": {
+    "/mnt/g/Repositorios/DEMO-PROYECTOS/ecommerce_nexus/ecommerce-nexus/services/order-service/src/OrderService.Application/OrderService.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/mnt/g/Repositorios/DEMO-PROYECTOS/ecommerce_nexus/ecommerce-nexus/services/order-service/src/OrderService.Application/OrderService.Application.csproj",
+        "projectName": "OrderService.Application",
+        "projectPath": "/mnt/g/Repositorios/DEMO-PROYECTOS/ecommerce_nexus/ecommerce-nexus/services/order-service/src/OrderService.Application/OrderService.Application.csproj",
+        "packagesPath": "/home/master/.nuget/packages/",
+        "outputPath": "/mnt/g/Repositorios/DEMO-PROYECTOS/ecommerce_nexus/ecommerce-nexus/services/order-service/src/OrderService.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/master/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/mnt/g/Repositorios/DEMO-PROYECTOS/ecommerce_nexus/ecommerce-nexus/services/order-service/src/OrderService.Domain/OrderService.Domain.csproj": {
+                "projectPath": "/mnt/g/Repositorios/DEMO-PROYECTOS/ecommerce_nexus/ecommerce-nexus/services/order-service/src/OrderService.Domain/OrderService.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.7.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.412/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/mnt/g/Repositorios/DEMO-PROYECTOS/ecommerce_nexus/ecommerce-nexus/services/order-service/src/OrderService.Domain/OrderService.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/mnt/g/Repositorios/DEMO-PROYECTOS/ecommerce_nexus/ecommerce-nexus/services/order-service/src/OrderService.Domain/OrderService.Domain.csproj",
+        "projectName": "OrderService.Domain",
+        "projectPath": "/mnt/g/Repositorios/DEMO-PROYECTOS/ecommerce_nexus/ecommerce-nexus/services/order-service/src/OrderService.Domain/OrderService.Domain.csproj",
+        "packagesPath": "/home/master/.nuget/packages/",
+        "outputPath": "/mnt/g/Repositorios/DEMO-PROYECTOS/ecommerce_nexus/ecommerce-nexus/services/order-service/src/OrderService.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/master/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.412/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
