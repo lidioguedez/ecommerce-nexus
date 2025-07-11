@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "jVRcjThM3jE=",
+  "success": true,
+  "projectFilePath": "/mnt/g/Repositorios/DEMO-PROYECTOS/ecommerce_nexus/ecommerce-nexus/services/order-service/src/OrderService.Application/OrderService.Application.csproj",
+  "expectedPackageFiles": [
+    "/home/master/.nuget/packages/fluentvalidation/11.7.1/fluentvalidation.11.7.1.nupkg.sha512",
+    "/home/master/.nuget/packages/mediatr/12.1.1/mediatr.12.1.1.nupkg.sha512",
+    "/home/master/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/home/master/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/home/master/.nuget/packages/microsoft.extensions.logging.abstractions/6.0.4/microsoft.extensions.logging.abstractions.6.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
