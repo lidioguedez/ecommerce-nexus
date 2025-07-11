@@ -29,7 +29,7 @@ Desarrollar una plataforma de e-commerce mínima pero integral que demuestre exp
 
 ### Servicios Principales:
 - **Product Service** (Node.js/TypeScript) - CRUD de productos e inventario ✅
-- **Order Service** (Node.js/TypeScript) - Gestión de carritos y pedidos
+- **Order Service** (.NET 6) - Gestión de carritos y pedidos 🚧
 - **User Service** (Go) - Autenticación y gestión de usuarios
 - **Search Service** (Node.js/TypeScript) - Integración con Elasticsearch
 
@@ -69,9 +69,9 @@ Desarrollar una plataforma de e-commerce mínima pero integral que demuestre exp
 ## 🛠️ Stack Tecnológico
 
 ### Lenguajes y Frameworks:
-- **Backend**: Node.js/TypeScript + Go
-- **Frameworks**: Express.js, Gin, Fiber
-- **Testing**: Jest, Supertest, Go testing
+- **Backend**: Node.js/TypeScript + .NET 6 + Go
+- **Frameworks**: Express.js, ASP.NET Core, Gin, Fiber
+- **Testing**: Jest, xUnit, FluentAssertions, Go testing
 - **CI/CD**: GitHub Actions
 - **Deployment**: Docker + Kubernetes
 
@@ -120,6 +120,7 @@ ecommerce-nexus/
 ### Prerrequisitos
 - Docker & Docker Compose
 - Node.js 18+
+- .NET 6 SDK
 - Go 1.21+
 - Git
 
@@ -149,17 +150,28 @@ npm install
 npm run dev
 ```
 
-### 5. Verificar Servicios
+### 5. Ejecutar Order Service (.NET 6)
+```bash
+cd services/order-service
+dotnet restore
+dotnet test  # Ejecutar tests TDD
+dotnet run --project src/OrderService.API
+```
+
+### 6. Verificar Servicios
 - **Product Service**: http://localhost:3001/health
+- **Order Service**: http://localhost:3002/health
 - **API Products**: http://localhost:3001/api/v1/products
+- **API Orders**: http://localhost:3002/api/v1/orders
 - **Métricas**: http://localhost:3001/metrics
 - **Grafana**: http://localhost:3000 (admin/admin)
 - **RabbitMQ Management**: http://localhost:15672 (admin/password)
 
 ## 🧪 Testing
 
-### Ejecutar Tests
+### Ejecutar Tests - Product Service (Node.js)
 ```bash
+cd services/product-service
 # Tests unitarios
 npm run test
 
@@ -170,11 +182,31 @@ npm run test:coverage
 npm run test:watch
 ```
 
+### Ejecutar Tests - Order Service (.NET 6)
+```bash
+cd services/order-service
+# Tests unitarios
+dotnet test
+
+# Tests con cobertura
+dotnet test --collect:"XPlat Code Coverage"
+
+# Tests en modo watch
+dotnet watch test
+```
+
 ### TDD Implementado
+#### Product Service ✅
 - ✅ Tests unitarios para entidades de dominio
 - ✅ Tests de casos de uso con mocks
 - ✅ Tests de integración para repositorios
 - ✅ Cobertura de código completa
+
+#### Order Service 🚧
+- ✅ Tests TDD para Value Objects (Money)
+- ✅ Tests de validación y reglas de negocio
+- ✅ Arquitectura DDD con Clean Architecture
+- 🚧 Tests para entidades y agregados (en desarrollo)
 
 ## 📊 Monitoreo y Observabilidad
 
@@ -223,12 +255,61 @@ Content-Type: application/json
 }
 ```
 
+## 🔧 API del Order Service (.NET 6)
+
+### Endpoints Principales:
+
+#### Crear Pedido
+```bash
+POST /api/v1/orders
+Content-Type: application/json
+
+{
+  "customerId": "c7f9d8e1-2345-6789-abcd-1234567890ab",
+  "items": [
+    {
+      "productId": "product-123",
+      "quantity": 2,
+      "unitPrice": {
+        "amount": 25.99,
+        "currency": "USD"
+      }
+    }
+  ]
+}
+```
+
+#### Obtener Pedidos por Cliente
+```bash
+GET /api/v1/orders/customer/{customerId}?status=pending&page=1&limit=10
+```
+
+#### Actualizar Estado de Pedido
+```bash
+PATCH /api/v1/orders/{orderId}/status
+Content-Type: application/json
+
+{
+  "status": "confirmed",
+  "reason": "Payment processed successfully"
+}
+```
+
+### Arquitectura DDD Implementada:
+- **Domain Layer**: Value Objects (Money), Entities, Aggregates
+- **Application Layer**: Use Cases, Commands, Queries
+- **Infrastructure Layer**: Entity Framework Core, RabbitMQ
+- **API Layer**: ASP.NET Core Web API
+
 ## ✅ Estado de Implementación
 
 ### Completado ✅
 - [x] Estructura de proyecto con microservicios
 - [x] Infraestructura Docker completa
-- [x] Product Service con DDD y TDD
+- [x] Product Service con DDD y TDD (Node.js/TypeScript)
+- [x] Order Service - Estructura .NET 6 con Clean Architecture
+- [x] Order Service - Domain Layer: Value Objects (Money) con TDD
+- [x] Order Service - Abstracciones comunes (Entity, ValueObject, IDomainEvent)
 - [x] API RESTful con validaciones
 - [x] PostgreSQL con migraciones
 - [x] RabbitMQ para eventos
@@ -236,7 +317,7 @@ Content-Type: application/json
 - [x] Dockerización optimizada
 
 ### En Desarrollo 🚧
-- [ ] Order Service
+- [ ] Order Service (.NET 6) - Domain Layer completo con TDD
 - [ ] User Service (Go)
 - [ ] Search Service con Elasticsearch
 
@@ -255,7 +336,7 @@ Content-Type: application/json
 - ✅ **Microservicios** - Servicios débilmente acoplados
 - ✅ **Persistencia Políglota** - PostgreSQL + MongoDB + Elasticsearch
 - ✅ **Event-Driven Architecture** - Mensajería con RabbitMQ
-- ✅ **Multi-lenguaje** - Node.js/TypeScript + Go
+- ✅ **Multi-lenguaje** - Node.js/TypeScript + .NET 6 + Go
 - ✅ **Estrategia de Testing** - Cobertura unit, integración, e2e
 - ✅ **Observabilidad** - Prometheus/Grafana/ELK
 - ✅ **Containerización** - Docker multi-stage optimizado
