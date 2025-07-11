@@ -1,0 +1,71 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net6.0": []
+  },
+  "packageFolders": {
+    "/home/master/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/mnt/g/Repositorios/DEMO-PROYECTOS/ecommerce_nexus/ecommerce-nexus/services/order-service/services/order-service/services/order-service/src/OrderService.Domain/OrderService.Domain.csproj",
+      "projectName": "OrderService.Domain",
+      "projectPath": "/mnt/g/Repositorios/DEMO-PROYECTOS/ecommerce_nexus/ecommerce-nexus/services/order-service/services/order-service/services/order-service/src/OrderService.Domain/OrderService.Domain.csproj",
+      "packagesPath": "/home/master/.nuget/packages/",
+      "outputPath": "/mnt/g/Repositorios/DEMO-PROYECTOS/ecommerce_nexus/ecommerce-nexus/services/order-service/services/order-service/services/order-service/src/OrderService.Domain/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/master/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.412/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
