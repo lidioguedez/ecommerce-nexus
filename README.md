@@ -16,14 +16,14 @@ Desarrollar una plataforma de e-commerce mínima pero integral que demuestre exp
 ## 🧩 Contextos de Dominio (DDD)
 
 ### Contextos Principales:
-1. **📦 Product Catalog** - Gestión de productos e inventario
-2. **🛒 Order Management** - Carritos de compra y procesamiento de pedidos
-3. **👤 User Management** - Autenticación y perfiles de usuario
-4. **🔍 Search & Discovery** - Búsqueda de productos via Elasticsearch
+1. **Product Catalog** - Gestión de productos e inventario
+2. **Order Management** - Carritos de compra y procesamiento de pedidos
+3. **User Management** - Autenticación y perfiles de usuario
+4. **Search & Discovery** - Búsqueda de productos via Elasticsearch
 
 ### Contextos de Soporte:
-5. **📧 Notification** - Notificaciones por email/SMS
-6. **📊 Analytics** - Métricas de usuario y comportamiento
+5. **Notification** - Notificaciones por email/SMS
+6. **Analytics** - Métricas de usuario y comportamiento
 
 ## 🏛️ Arquitectura de Microservicios
 
@@ -92,20 +92,20 @@ Desarrollar una plataforma de e-commerce mínima pero integral que demuestre exp
 ```
 ecommerce-nexus/
 ├── services/                    # 6 microservicios
-│   ├── product-service/         # ✅ Completado
-│   ├── order-service/           # 🚧 En desarrollo
-│   ├── user-service/            # ⏳ Pendiente
-│   ├── search-service/          # ⏳ Pendiente
-│   ├── notification-service/    # ⏳ Pendiente
-│   └── analytics-service/       # ⏳ Pendiente
+│   ├── product-service/         # Completado
+│   ├── order-service/           # En desarrollo
+│   ├── user-service/            # Pendiente
+│   ├── search-service/          # Pendiente
+│   ├── notification-service/    # Pendiente
+│   └── analytics-service/       # Pendiente
 ├── shared/                      # Modelos y utilidades comunes
 │   ├── models/
 │   ├── utils/
 │   └── config/
 ├── infrastructure/              # K8s, Docker, monitoreo
-│   ├── docker/                  # ✅ Docker Compose
-│   ├── k8s/                     # ⏳ Configuraciones K8s
-│   └── monitoring/              # ✅ Prometheus config
+│   ├── docker/                  # Docker Compose
+│   ├── k8s/                     # Configuraciones K8s
+│   └── monitoring/              # Prometheus config
 ├── docs/                        # Especificaciones API y arquitectura
 │   ├── api/
 │   └── architecture/
@@ -328,24 +328,6 @@ Content-Type: application/json
 - [ ] Pipeline CI/CD
 - [ ] Tests E2E
 - [ ] Documentación OpenAPI
-
-## 🏆 Tecnologías Demostradas
-
-- ✅ **APIs RESTful** - Operaciones CRUD completas
-- ✅ **DDD & Bounded Contexts** - Separación limpia de dominios
-- ✅ **Microservicios** - Servicios débilmente acoplados
-- ✅ **Persistencia Políglota** - PostgreSQL + MongoDB + Elasticsearch
-- ✅ **Event-Driven Architecture** - Mensajería con RabbitMQ
-- ✅ **Multi-lenguaje** - Node.js/TypeScript + .NET 6 + Go
-- ✅ **Estrategia de Testing** - Cobertura unit, integración, e2e
-- ✅ **Observabilidad** - Prometheus/Grafana/ELK
-- ✅ **Containerización** - Docker multi-stage optimizado
-- 🚧 **Orquestación** - Despliegue con Kubernetes
-- 🚧 **CI/CD** - Workflow con GitHub Actions
-
-## 👨‍💻 Developer
-
-**Lidio Guedez** - Full Stack Developer
 
 ## 📄 License
 
