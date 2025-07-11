@@ -335,4 +335,4 @@ This project is licensed under the Apache-2.0 License - see the [LICENSE](LICENS
 
 ---
 
-*E-commerce Nexus v1.0.0 | MVP de Arquitectura de Microservicios 
+*E-commerce Nexus v1.0.0 | MVP de Arquitectura de Microservicios*
