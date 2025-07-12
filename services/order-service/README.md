@@ -6,7 +6,7 @@ Microservicio para gestión de pedidos y carritos de compra del sistema E-commer
 ## 🏗️ Arquitectura
 
 ### Stack Tecnológico
-- **.NET 6.0** - Framework principal
+- **.NET 6.0** - Framework principal 
 - **ASP.NET Core 6** - Web API
 - **Entity Framework Core 6** - ORM para PostgreSQL
 - **MongoDB.Driver** - Base de datos para carritos
