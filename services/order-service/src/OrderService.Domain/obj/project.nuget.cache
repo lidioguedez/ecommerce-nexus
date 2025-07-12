@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BeGrbvDl4Tk=",
+  "dgSpecHash": "DLoWWbFaDHk=",
   "success": true,
-  "projectFilePath": "/mnt/g/Repositorios/DEMO-PROYECTOS/ecommerce_nexus/ecommerce-nexus/services/order-service/src/OrderService.Domain/OrderService.Domain.csproj",
+  "projectFilePath": "G:\\Repositorios\\DEMO-PROYECTOS\\ecommerce_nexus\\ecommerce-nexus\\services\\order-service\\src\\OrderService.Domain\\OrderService.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,33 +1,43 @@
 {
   "format": 1,
   "restore": {
-    "/mnt/g/Repositorios/DEMO-PROYECTOS/ecommerce_nexus/ecommerce-nexus/services/order-service/src/OrderService.Application/OrderService.Application.csproj": {}
+    "G:\\Repositorios\\DEMO-PROYECTOS\\ecommerce_nexus\\ecommerce-nexus\\services\\order-service\\src\\OrderService.Application\\OrderService.Application.csproj": {}
   },
   "projects": {
-    "/mnt/g/Repositorios/DEMO-PROYECTOS/ecommerce_nexus/ecommerce-nexus/services/order-service/src/OrderService.Application/OrderService.Application.csproj": {
+    "G:\\Repositorios\\DEMO-PROYECTOS\\ecommerce_nexus\\ecommerce-nexus\\services\\order-service\\src\\OrderService.Application\\OrderService.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/mnt/g/Repositorios/DEMO-PROYECTOS/ecommerce_nexus/ecommerce-nexus/services/order-service/src/OrderService.Application/OrderService.Application.csproj",
+        "projectUniqueName": "G:\\Repositorios\\DEMO-PROYECTOS\\ecommerce_nexus\\ecommerce-nexus\\services\\order-service\\src\\OrderService.Application\\OrderService.Application.csproj",
         "projectName": "OrderService.Application",
-        "projectPath": "/mnt/g/Repositorios/DEMO-PROYECTOS/ecommerce_nexus/ecommerce-nexus/services/order-service/src/OrderService.Application/OrderService.Application.csproj",
-        "packagesPath": "/home/master/.nuget/packages/",
-        "outputPath": "/mnt/g/Repositorios/DEMO-PROYECTOS/ecommerce_nexus/ecommerce-nexus/services/order-service/src/OrderService.Application/obj/",
+        "projectPath": "G:\\Repositorios\\DEMO-PROYECTOS\\ecommerce_nexus\\ecommerce-nexus\\services\\order-service\\src\\OrderService.Application\\OrderService.Application.csproj",
+        "packagesPath": "C:\\Users\\lidio\\.nuget\\packages\\",
+        "outputPath": "G:\\Repositorios\\DEMO-PROYECTOS\\ecommerce_nexus\\ecommerce-nexus\\services\\order-service\\src\\OrderService.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "/home/master/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\lidio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Grabaciones": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/mnt/g/Repositorios/DEMO-PROYECTOS/ecommerce_nexus/ecommerce-nexus/services/order-service/src/OrderService.Domain/OrderService.Domain.csproj": {
-                "projectPath": "/mnt/g/Repositorios/DEMO-PROYECTOS/ecommerce_nexus/ecommerce-nexus/services/order-service/src/OrderService.Domain/OrderService.Domain.csproj"
+              "G:\\Repositorios\\DEMO-PROYECTOS\\ecommerce_nexus\\ecommerce-nexus\\services\\order-service\\src\\OrderService.Domain\\OrderService.Domain.csproj": {
+                "projectPath": "G:\\Repositorios\\DEMO-PROYECTOS\\ecommerce_nexus\\ecommerce-nexus\\services\\order-service\\src\\OrderService.Domain\\OrderService.Domain.csproj"
               }
             }
           }
@@ -39,13 +49,18 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
             "FluentValidation": {
+              "target": "Package",
+              "version": "[11.7.1, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
               "target": "Package",
               "version": "[11.7.1, )"
             },
@@ -78,26 +93,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.412/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/mnt/g/Repositorios/DEMO-PROYECTOS/ecommerce_nexus/ecommerce-nexus/services/order-service/src/OrderService.Domain/OrderService.Domain.csproj": {
+    "G:\\Repositorios\\DEMO-PROYECTOS\\ecommerce_nexus\\ecommerce-nexus\\services\\order-service\\src\\OrderService.Domain\\OrderService.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/mnt/g/Repositorios/DEMO-PROYECTOS/ecommerce_nexus/ecommerce-nexus/services/order-service/src/OrderService.Domain/OrderService.Domain.csproj",
+        "projectUniqueName": "G:\\Repositorios\\DEMO-PROYECTOS\\ecommerce_nexus\\ecommerce-nexus\\services\\order-service\\src\\OrderService.Domain\\OrderService.Domain.csproj",
         "projectName": "OrderService.Domain",
-        "projectPath": "/mnt/g/Repositorios/DEMO-PROYECTOS/ecommerce_nexus/ecommerce-nexus/services/order-service/src/OrderService.Domain/OrderService.Domain.csproj",
-        "packagesPath": "/home/master/.nuget/packages/",
-        "outputPath": "/mnt/g/Repositorios/DEMO-PROYECTOS/ecommerce_nexus/ecommerce-nexus/services/order-service/src/OrderService.Domain/obj/",
+        "projectPath": "G:\\Repositorios\\DEMO-PROYECTOS\\ecommerce_nexus\\ecommerce-nexus\\services\\order-service\\src\\OrderService.Domain\\OrderService.Domain.csproj",
+        "packagesPath": "C:\\Users\\lidio\\.nuget\\packages\\",
+        "outputPath": "G:\\Repositorios\\DEMO-PROYECTOS\\ecommerce_nexus\\ecommerce-nexus\\services\\order-service\\src\\OrderService.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "/home/master/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\lidio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Grabaciones": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -113,7 +138,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net6.0": {
@@ -134,7 +160,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.412/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
